@@ -1593,7 +1593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typeid-js@npm:^1.0.0":
+"typeid-js@npm:1.0.0":
   version: 1.0.0
   resolution: "typeid-js@npm:1.0.0"
   dependencies:
@@ -1602,12 +1602,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typeid-js@patch:typeid-js@npm%3A1.0.0#~/.yarn/patches/typeid-js-npm-1.0.0-bf46b484d0.patch":
+  version: 1.0.0
+  resolution: "typeid-js@patch:typeid-js@npm%3A1.0.0#~/.yarn/patches/typeid-js-npm-1.0.0-bf46b484d0.patch::version=1.0.0&hash=ff5f67"
+  dependencies:
+    uuidv7: "npm:^0.6.2"
+  checksum: 10c0/620e01646623aed712c8751c595722649c3472fdfe6049f281ef163c1fe5bf0cc0ca32bb727b3d863c214926af9831ff14660642e7dbcc11467b56568a50578c
+  languageName: node
+  linkType: hard
+
 "typeid-zero-not-being-a-valid-time@workspace:.":
   version: 0.0.0-use.local
   resolution: "typeid-zero-not-being-a-valid-time@workspace:."
   dependencies:
     prettier: "npm:3.3.3"
-    typeid-js: "npm:^1.0.0"
+    typeid-js: "patch:typeid-js@npm%3A1.0.0#~/.yarn/patches/typeid-js-npm-1.0.0-bf46b484d0.patch"
     vitest: "npm:^2.0.5"
   languageName: unknown
   linkType: soft
